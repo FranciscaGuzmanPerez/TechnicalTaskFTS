@@ -11,5 +11,17 @@ let Add (numbers: string) =
 
 [<EntryPoint>]
 let main argv =
-    printfn "Result of '1,2' -> %d" (Add "1,2")
+    let mutable keepRunning = true
+    while keepRunning do
+        let input = Console.ReadLine()
+
+        match input with
+        | null ->
+            keepRunning <- false
+
+        | _ ->
+            let result = Add input
+            printfn "%d" result
+
+    // retornar 0 para indicar que termina el programa
     0
