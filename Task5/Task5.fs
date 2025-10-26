@@ -11,7 +11,7 @@
 // Example:
 //   1,2,3 = 6
 //   //;\n1;2 = 3
-//   1,-2,-3 =Exception: "negatives not allowed: -2, -3"
+//   1,-2,-3 = Exception: "negatives not allowed: -2, -3"
 // -----------------------------------------------------------
 let Add (numbers: string) =
     if String.IsNullOrWhiteSpace numbers then
@@ -20,11 +20,10 @@ let Add (numbers: string) =
         // Default delimiters
         let baseDelims : string[] = [| ","; "\n"; "\r\n"; "\\n" |]
 
-        // Helper to extract a custom delimiter (same as before)
+        // Helper to extract a custom delimiter
         let parseCustom (s:string) =
             if s.StartsWith("//") then
                 let rest = s.Substring(2)
-                // find the first newline marker
                 let idxRN = rest.IndexOf("\r\n")
                 let idxN  = if idxRN < 0 then rest.IndexOf('\n') else -1
                 let idxLitN = if idxRN < 0 && idxN < 0 then rest.IndexOf("\\n") else -1
@@ -47,14 +46,14 @@ let Add (numbers: string) =
                 (None, s)
 
         // Build final delimiters list
-        let (custom, payload) =
+        let (delims, payload) =
             let (maybeDelim, remaining) = parseCustom numbers
             match maybeDelim with
             | Some d when d <> "" -> (Array.append baseDelims [| d |], remaining)
             | _ -> (baseDelims, numbers)
 
         // Split text
-        let parts = payload.Split(custom, StringSplitOptions.RemoveEmptyEntries)
+        let parts = payload.Split(delims, StringSplitOptions.RemoveEmptyEntries)
 
         // Convert and check for negatives
         let mutable total = 0
@@ -69,13 +68,11 @@ let Add (numbers: string) =
                 else
                     total <- total + value
 
-        // If any negative numbers were found → throw an exception
         if negatives <> [] then
             let msg = "negatives not allowed: " + String.Join(", ", List.rev negatives)
             raise (ArgumentException msg)
 
         total
-
 
 // -----------------------------------------------------------
 // Main Program Entry Point
@@ -95,5 +92,8 @@ let main argv =
                 printfn "%d" result
             with
             | :? ArgumentException as ex ->
-                // Show the exception message for negatives
                 printfn "Exception: \"%s\"" ex.Message
+
+    //return an int to indicate success
+    0
+
