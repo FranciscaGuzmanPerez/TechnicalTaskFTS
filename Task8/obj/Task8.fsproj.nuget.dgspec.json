@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task6\\Task6.fsproj": {}
+    "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task8\\Task8.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task6\\Task6.fsproj": {
+    "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task8\\Task8.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task6\\Task6.fsproj",
-        "projectName": "Task6",
-        "projectPath": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task6\\Task6.fsproj",
+        "projectUniqueName": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task8\\Task8.fsproj",
+        "projectName": "Task8",
+        "projectPath": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task8\\Task8.fsproj",
         "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task6\\obj\\",
+        "outputPath": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task8\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
