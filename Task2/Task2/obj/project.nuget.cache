@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XkTmSGojHKY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ignac\\OneDrive\\Desktop\\FTSTechnicalTasks\\Task2\\Task2\\Task2.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ignac\\.nuget\\packages\\fsharp.core\\9.0.300\\fsharp.core.9.0.300.nupkg.sha512"
+  ],
+  "logs": []
+}
