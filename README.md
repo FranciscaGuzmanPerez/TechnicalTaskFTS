@@ -15,6 +15,38 @@ Throughout the process, I focused on:
 
 Note: Certain tasks were addressed in earlier stages, and therefore share the same code implementation. Nevertheless, this report focuses on the unique challenges and learning outcomes associated with each task.
 
+---
+
+## How to Run the Project
+
+To test or review any of the tasks, follow these steps:
+
+1. **Clone the repository**  
+
+   ```bash
+   git clone https://github.com/FranciscaGuzmanPerez/TechnicalTaskFTS.git
+    ```
+
+2. **Open the project**
+
+    Use your preferred IDE or editor. For example, Visual Studio Code configured with the Ionide plugin or any extension that supports F# and .NET development.
+
+3. **Navigate to the desired task folder**
+
+    Each task is stored in its own subfolder (e.g., Task1, Task2, etc.).
+
+4. **Run the program**
+
+    Execute the following command in your terminal:
+    ```
+    dotnet run
+    ```
+
+    The program will start and prompt for input in the console.
+
+You can now test different examples according to the task requirements.
+
+
 # Functional Programming Journey in F#
 When I started this project, my main goal wasn’t just to make a program work — it was to understand how to think functionally.
 Until this challenge, most of my experience had been with imperative programming, where the focus is on how to do things step by step.
